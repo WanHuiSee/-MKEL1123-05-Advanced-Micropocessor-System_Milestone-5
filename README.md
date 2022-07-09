@@ -19,7 +19,9 @@
 
 <br>Step to build and train data model from Edge Impulse:
   1. The image dataset used was obtained and downloaded from Kaggle
-     <br>(Link:https://www.kaggle.com/datasets/atulyakumar98/test-dataset?resource=download
+     <br>(Link:[Fire Detection Dataset](https://www.kaggle.com/datasets/atulyakumar98/test-dataset?resource=download)(
   2. The dateset was then uploaded to Edge Impulse through the uploader. On "Dashboard", select "LET'S COLLECT SOME DATA".
   ![EI1](https://user-images.githubusercontent.com/105101813/178113464-8493a0d8-1ca8-40d4-be92-4d4a01ae0ceb.JPG)
   3. Choose "Upload data" and click "Go to the uploader".
+  ![EI2](https://user-images.githubusercontent.com/105101813/178114867-a54bf1ec-3124-4984-a014-562d041a490b.JPG)
+  5. In Data acquisition
