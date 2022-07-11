@@ -5,9 +5,9 @@
 <br>  Group Member: 
 | **Name** | **Matrics Number** |
 | :-----------: | :-----------: |
-| Kukenraj a\l K.Pugalenthy | MKE211088 |
 | Low Q' Ying | MKE211099 |
 | See Wan Hui | MKE211093 |
+| Kukenraj a\l K.Pugalenthy | MKE211088 |
 
 ### 1.0 Overview of this project
 In this project, a computer-vision based system will be implemented on a STM32 development board armed with Cortex embedded processor to detect fire and trigger fire alert alarm. The main idea of our project is to propose a system that is able to monitor surveillance data and reduce damages and life loss. The Edge Impulse is used to train the datasets for fire detection to be deployed into the STM32 MCU.
