@@ -53,9 +53,12 @@ In this project, a computer-vision based system will be implemented on a STM32 d
   <br>![NN Classifier](https://user-images.githubusercontent.com/105101813/178152877-216dabe6-59cd-4a2f-9a51-943efe274546.png)
   9. Then, click the "Classify all" button in "Model testing" section and prediction on testing datasets is made by the best performing model and the testing accuracy is shown.
   <br>![Model Testing](https://user-images.githubusercontent.com/105101813/178153240-10998114-0af2-461d-9387-d890ef0dfc8f.png)
-  10. Lastly, go to "Deployment" section and select "Cube.MX CMSIS-PACK" and make sure the EON Compiler is enabled before click the "Build" button. Once the "Build" button has been clicked, the PACK file is downloaded, which will be used in the STM32CubeIDE.
+  10. Lastly, go to "Deployment" section and select "Cube.MX CMSIS-PACK" and make sure the EON Compiler is enabled before click the "Build" button. 
   <br>![image](https://user-images.githubusercontent.com/105101813/178153385-6d84e103-2356-4e45-b585-0d5b93dc228d.png)
   <br>![Enable EON™ Compiler](https://user-images.githubusercontent.com/105101813/178153362-5ad85af1-b30e-4c09-bed0-fb7e9c0e0e0a.png)
+  Once the "Build" button has been clicked, the PACK file is downloaded and will be used in the STM32CubeIDE.
+  <br>![image](https://user-images.githubusercontent.com/105101813/178279427-5c03286f-3014-4f67-a43a-bae88a97701e.png)
+
 
 ### 3.2 Steps to Deploy Model in STM32CubeIDE:
   1. First, open up the STM32CubeIDE and start a new STM32 project.
