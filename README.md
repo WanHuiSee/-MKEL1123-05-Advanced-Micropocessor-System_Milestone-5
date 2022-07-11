@@ -13,7 +13,7 @@
 In this project, a computer-vision based system will be implemented on a STM32 development board armed with Cortex embedded processor to detect fire and trigger fire alert alarm. The main idea of our project is to propose a system that is able to monitor surveillance data and reduce damages and life loss. The Edge Impulse is used to train the datasets for fire detection to be deployed into the STM32 MCU.
 
 ##### Figure below shows the connection of STM32F446RE with buzzer
-![Connection](https://user-images.githubusercontent.com/105101813/178275164-7c0153df-62c8-4a14-9bc8-4bae68cd80d4.jpeg)
+![image](https://user-images.githubusercontent.com/105101813/178290916-c78cf33b-49d7-4839-9c85-997164d15cc2.png)
 
 ## 2.0 Equipments and Softwares
 ### 2.1 Equipments Required
@@ -92,6 +92,7 @@ In this project, a computer-vision based system will be implemented on a STM32 d
   <br>![image](https://user-images.githubusercontent.com/105101813/178241660-9914d25f-66aa-471b-850e-889fe193f440.png)
   <br>Figure below shows the board connection to get output from PuTTy and buzzer.
   <br>![Board Connection_2](https://user-images.githubusercontent.com/104665552/178283862-907a62b2-c826-4d53-aacb-f61758b78f21.jpeg)
+  
 
 ## 4.0 Youtube Demo Video Link
 - [Group 3: Product Demo](https://www.youtube.com/watch?v=Mi5RXnzab6Y&t=1s&ab_channel=ADVANCEDMICROPROCESSORSYSTEM)
