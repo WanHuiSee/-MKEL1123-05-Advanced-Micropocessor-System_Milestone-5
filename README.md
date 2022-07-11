@@ -36,7 +36,7 @@ In this project, a computer-vision based system will be implemented on a STM32 d
 ## 3.0 Overall Procedures 
 ### 3.1 Steps to build and train data model from Edge Impulse:
   1. The image dataset used is obtained and downloaded from Kaggle
-     <br>(Link:[Fire Detection Dataset](https://www.kaggle.com/datasets/atulyakumar98/test-dataset?resource=download)(
+     <br>(Link:[Fire Detection Dataset](https://www.kaggle.com/datasets/atulyakumar98/test-dataset?resource=download))
   2. The dateset is then uploaded to Edge Impulse through the uploader. On "Dashboard", select "LET'S COLLECT SOME DATA".
   <br>![EI1](https://user-images.githubusercontent.com/105101813/178113464-8493a0d8-1ca8-40d4-be92-4d4a01ae0ceb.JPG)
   3. Choose "Upload data" and click "Go to the uploader".
