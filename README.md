@@ -74,6 +74,8 @@ PuTTy connection to display output of microcontroller:
 ## Youtube Demo Video Link
 
 ## Reference
+### Tutorial Video
+  1. [How to Interface buzzer with STM32 || PWM || HAL || CubeMx](https://www.bing.com/videos/search?q=pwm+with+buzzer+stm32&qpvt=pwm+with+buzzer+stm32&view=detail&mid=9B67493FD1F2A456778A9B67493FD1F2A456778A&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dpwm%2Bwith%2Bbuzzer%2Bstm32%26qpvt%3Dpwm%2Bwith%2Bbuzzer%2Bstm32%26FORM%3DVDRE)
 
 
 
