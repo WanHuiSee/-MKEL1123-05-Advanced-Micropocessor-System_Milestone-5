@@ -78,7 +78,7 @@ In this project, a computer-vision based system will be implemented on a STM32 d
   10. Click the "Project Explorer" on the left menu bar so the .ioc file loses focus. Press "CTRL"+"s" to save the workspace and click "Yes" for both questions "Do you want to regenerate the code?" and "This action can be associated with C/C++ perspective. Do you want to open this perspective now?". Make sure a "Middleware" folder is generated which stored all the impulses and required libraries.
   11. Rename the "main.c" file under Core/Src in "Project Explorer" to "main.cpp", as C++ language is preferred to be used.
   12. Then, the "main.cpp" script is edited as shown in the reference below.
-   <br>(Link: [main.cpp](XXX))
+   <br>(Link: [main.cpp](https://github.com/WanHuiSee/-MKEL1123-05-Advanced-Micropocessor-System_Milestone-5/blob/main/Core/Src/main.cpp))
   13. Click on the “Hammer” icon at the top to build the project and make sure there’s no error.
   <br>![image](https://user-images.githubusercontent.com/105101813/178243593-25326189-338e-4c2b-8aec-6d58747729d8.png)
   15. Click on the “Play” icon at the top to deploy the code on the board. Leave the settings as default and click “OK”. [** Make sure STM32F446RE board is connected to the laptop before click the "Play" icon.]
@@ -91,8 +91,7 @@ In this project, a computer-vision based system will be implemented on a STM32 d
   3. Finally, the output can be seen from PuTTY serial console. The results can be compared with test result from Edge Impulse.
   <br>![image](https://user-images.githubusercontent.com/105101813/178241660-9914d25f-66aa-471b-850e-889fe193f440.png)
   <br>Figure below shows the board connection to get output from PuTTy and buzzer.
-  <br>![Board Connection](https://user-images.githubusercontent.com/105101813/178276052-5e18f21b-e8a4-4cf5-a73f-d106ae5a3284.png)
-
+  <br>![Board Connection_2](https://user-images.githubusercontent.com/104665552/178283862-907a62b2-c826-4d53-aacb-f61758b78f21.jpeg)
 
 ## 4.0 Youtube Demo Video Link
 - [Group 3: Product Demo](https://www.youtube.com/watch?v=Mi5RXnzab6Y&t=1s&ab_channel=ADVANCEDMICROPROCESSORSYSTEM)
