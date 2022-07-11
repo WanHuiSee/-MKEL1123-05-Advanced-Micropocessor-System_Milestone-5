@@ -41,6 +41,32 @@
   <br>![Enable EON™ Compiler](https://user-images.githubusercontent.com/105101813/178153362-5ad85af1-b30e-4c09-bed0-fb7e9c0e0e0a.png)
 
 Steps to Deploy Model in STM32CubeIDE:
+  1. First, open up the STM32CubeIDE and start a new STM32 project.
+  2. Search for "NUCLEO-F446RE" under the "Board Selector" tab and click "Next".
+  3. Enter the project name and select"C++" as the Targeted Language.
+  4. Next, click 'Finish'. If there is a pop up, click 'Yes' to initialize all peripherals with their default Mode.
+  5. Open .ioc file, go to 'Pinout & Configuration' > 'Computing' > 'CRC' and enable 'Activavated' checkbox.
+  <br>![image](https://user-images.githubusercontent.com/105101813/178239741-b03c8a7c-0d79-4c73-a71c-f7632336cf23.png)
+  7. Then, go to 'Help' > 'Manage Embedded Software Packages' > 'From Local...' and select the downloaded pack. 
+  <br>![Embedded Software Packages](https://user-images.githubusercontent.com/105101813/178241928-bb589d66-6429-404a-a3b5-f24ac54306c9.png)
+  Accept the license agreement and the pack will be installed. Now, the pack downloaded from Edge Impulse is added into the project.
+  <br>![image](https://user-images.githubusercontent.com/105101813/178238108-306fb667-bb3c-473e-b08e-ac957bb69396.png)
+  8. After the pack installation, switch back to .ioc file and go to Pinout & Configuration' > 'Software packs' > 'Select components'. Search for our project, expand the pack and checked on the checkbox under 'Selection'. Then, click "OK" to close the window.
+  <br>![Software Packs Component Selector](https://user-images.githubusercontent.com/105101813/178234560-8d04441a-c4b5-4aa7-aeb5-e1fbf3fb015a.png)
+  9. Back to 'Pinout & Configuration', under 'Additional software', click on the project name and click on the checkbox under 'Mode'.
+  <br>![Additional software](https://user-images.githubusercontent.com/105101813/178234412-9eca997a-9012-4757-84f3-161e8f53ac9f.png)
+  10. Click the "Project Explorer" on the left menu bar so the .ioc file loses focus. Press "CTRL"+"s" to save the workspace and click "Yes" for both questions "Do you want to regenerate the code?" and "This action can be associated with C/C++ perspective. Do you want to open this perspective now?". Make sure a "Middleware" folder is generated which stored all the impulses and required libraries.
+  11. Rename the "main.c" file under Core/Src in "Project Explorer" to "main.cpp", as C++ language is preferred to be used.
+  12. Then, the "main.cpp" script is edited as shown in the reference below.
+   <br>(Link: XXX)
+  13. Click on the “Hammer” icon at the top to build the project and make sure there’s no error.
+  14. Click on the “Play” icon at the top to deploy the code on the board. Leave the settings as default and click “OK”. [** Make sure STM32F446RE board is connected to the laptop before click the "Play" icon.]
+ 
+PuTTy connection to display output of microcontroller:
+  1. Open 'Device Manager' to check which USB COM is connected.
+  2. Open PuTTY, change the connection type to 'Serial', enter the USB COM in 'serial line' column and set the speed to 115200. Then, click 'Open'.
+  3. Finally, the output can be seen from PuTTY serial console. The results can be compared with test result from Edge Impulse.
+  <br>![image](https://user-images.githubusercontent.com/105101813/178241660-9914d25f-66aa-471b-850e-889fe193f440.png)
 
 
 
