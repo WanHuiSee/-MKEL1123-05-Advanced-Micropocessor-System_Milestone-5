@@ -1,4 +1,4 @@
-# MKEL1123-05 Advanced Micropocessor System Milestone 5
+# MKEL1123-05 Advanced Micropocessor System Milestone 5 - Fire Detection System
 
 ## Overview
 **Group 3**
@@ -9,15 +9,32 @@
 | Low Q' Ying | MKE211099 |
 | See Wan Hui | MKE211093 |
 
-<br>Online Application/Software used in this project:
-  1. Edge Impulse to train the data model
-     <br>(Sign up for free at [Edge Impulse](https://www.edgeimpulse.com/))
-  2. STM32CubeIDE to deploy trained model into microcontroller board
-     <br>(Download and install from [Integrated Development Environment for STM32](https://www.st.com/en/development-tools/stm32cubeide.html))
-  3. PuTTY to display test result
-     <br>(Download and install from [Download PuTTY: latest release (0.77)](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
+### 1.0 Overview of this project
+In this project, a computer-vision based system will be implemented on a STM32 development board armed with Cortex embedded processor to detect fire and trigger fire alert alarm. The main idea of our project is to propose a system that is able to monitor surveillance data and reduce damages and life loss. The Edge Impulse is used to train the datasets for fire detection to be deployed into the STM32 MCU.
 
-<br>Step to build and train data model from Edge Impulse:
+##### Figure below shows the connection of STM32F446RE with buzzer
+![Connection](https://user-images.githubusercontent.com/105101813/178275164-7c0153df-62c8-4a14-9bc8-4bae68cd80d4.jpeg)
+
+## 2.0 Equipments and Softwares
+### 2.1 Equipments Required
+- Microcontroller board with Cortex-M4 based processor, STM32F446 Nucleo-64 (STM32F446RET6 64 PINS)
+- Personal computer 
+- USB Type-A to Mini-B cable
+- M-to-M wires
+- M-to-F wires
+- F-to-F wires
+- Buzzer
+
+### 2.2 Online Applications/Softwares used in this project:
+ - Edge Impulse to train the data model
+   <br>(Sign up for free at [Edge Impulse](https://www.edgeimpulse.com/))
+ - STM32CubeIDE to deploy trained model into microcontroller board
+   <br>(Download and install from [Integrated Development Environment for STM32](https://www.st.com/en/development-tools/stm32cubeide.html))
+ - PuTTY to display test result
+   <br>(Download and install from [Download PuTTY: latest release (0.77)](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
+
+## 3.0 Overall Procedures 
+### 3.1 Steps to build and train data model from Edge Impulse:
   1. The image dataset used is obtained and downloaded from Kaggle
      <br>(Link:[Fire Detection Dataset](https://www.kaggle.com/datasets/atulyakumar98/test-dataset?resource=download)(
   2. The dateset is then uploaded to Edge Impulse through the uploader. On "Dashboard", select "LET'S COLLECT SOME DATA".
@@ -40,7 +57,7 @@
   <br>![image](https://user-images.githubusercontent.com/105101813/178153385-6d84e103-2356-4e45-b585-0d5b93dc228d.png)
   <br>![Enable EON™ Compiler](https://user-images.githubusercontent.com/105101813/178153362-5ad85af1-b30e-4c09-bed0-fb7e9c0e0e0a.png)
 
-Steps to Deploy Model in STM32CubeIDE:
+### 3.2 Steps to Deploy Model in STM32CubeIDE:
   1. First, open up the STM32CubeIDE and start a new STM32 project.
   2. Search for "NUCLEO-F446RE" under the "Board Selector" tab and click "Next".
   3. Enter the project name and select"C++" as the Targeted Language.
@@ -63,21 +80,25 @@ Steps to Deploy Model in STM32CubeIDE:
   <br>![image](https://user-images.githubusercontent.com/105101813/178243593-25326189-338e-4c2b-8aec-6d58747729d8.png)
   15. Click on the “Play” icon at the top to deploy the code on the board. Leave the settings as default and click “OK”. [** Make sure STM32F446RE board is connected to the laptop before click the "Play" icon.]
  
-PuTTy connection to display output of microcontroller:
+### 3.3 Steps to connect PuTTy as output of microcontroller:
   1. Open 'Device Manager' to check which USB COM is connected.
   <br> ![image](https://user-images.githubusercontent.com/105101813/178243771-ba974d19-c1f9-4756-9657-f15ea2f45cc0.png)
-  3. Open PuTTY, change the connection type to 'Serial', enter the USB COM in 'serial line' column and set the speed to 115200. Then, click 'Open'.
+  2. Open PuTTY, change the connection type to 'Serial', enter the USB COM in 'serial line' column and set the speed to 115200. Then, click 'Open'.
   <br> ![image](https://user-images.githubusercontent.com/105101813/178243827-a54be592-dcd6-4f35-92d5-f72d44d8164b.png)
-  5. Finally, the output can be seen from PuTTY serial console. The results can be compared with test result from Edge Impulse.
+  3. Finally, the output can be seen from PuTTY serial console. The results can be compared with test result from Edge Impulse.
   <br>![image](https://user-images.githubusercontent.com/105101813/178241660-9914d25f-66aa-471b-850e-889fe193f440.png)
+  <br>Figure below shows the board connection to get output from PuTTy and buzzer.
+  <br>![Board Connection](https://user-images.githubusercontent.com/105101813/178276052-5e18f21b-e8a4-4cf5-a73f-d106ae5a3284.png)
 
-## Youtube Demo Video Link
+
+## 4.0 Youtube Demo Video Link
 - [Group 3: Product Demo](https://www.youtube.com/watch?v=Mi5RXnzab6Y&t=1s&ab_channel=ADVANCEDMICROPROCESSORSYSTEM)
-## Reference
-### Tutorial Video
+
+## 5.0 References
+### 5.1 Tutorial Video
   1. [How to Interface buzzer with STM32 || PWM || HAL || CubeMx](https://www.bing.com/videos/search?q=pwm+with+buzzer+stm32&qpvt=pwm+with+buzzer+stm32&view=detail&mid=9B67493FD1F2A456778A9B67493FD1F2A456778A&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dpwm%2Bwith%2Bbuzzer%2Bstm32%26qpvt%3Dpwm%2Bwith%2Bbuzzer%2Bstm32%26FORM%3DVDRE)
   
- ### Website
+ ### 5.2 Website
   1. [Getting Started with STM32 - Introduction to STM32CubeIDE](https://www.digikey.my/en/maker/projects/getting-started-with-stm32-introduction-to-stm32cubeide/6a6c60a670c447abb90fd0fd78008697)
 
 
