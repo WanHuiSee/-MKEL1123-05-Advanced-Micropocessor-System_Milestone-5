@@ -58,16 +58,22 @@ Steps to Deploy Model in STM32CubeIDE:
   10. Click the "Project Explorer" on the left menu bar so the .ioc file loses focus. Press "CTRL"+"s" to save the workspace and click "Yes" for both questions "Do you want to regenerate the code?" and "This action can be associated with C/C++ perspective. Do you want to open this perspective now?". Make sure a "Middleware" folder is generated which stored all the impulses and required libraries.
   11. Rename the "main.c" file under Core/Src in "Project Explorer" to "main.cpp", as C++ language is preferred to be used.
   12. Then, the "main.cpp" script is edited as shown in the reference below.
-   <br>(Link: XXX)
+   <br>(Link: [main.cpp](XXX))
   13. Click on the “Hammer” icon at the top to build the project and make sure there’s no error.
-  14. Click on the “Play” icon at the top to deploy the code on the board. Leave the settings as default and click “OK”. [** Make sure STM32F446RE board is connected to the laptop before click the "Play" icon.]
+  <br>![image](https://user-images.githubusercontent.com/105101813/178243593-25326189-338e-4c2b-8aec-6d58747729d8.png)
+  15. Click on the “Play” icon at the top to deploy the code on the board. Leave the settings as default and click “OK”. [** Make sure STM32F446RE board is connected to the laptop before click the "Play" icon.]
  
 PuTTy connection to display output of microcontroller:
   1. Open 'Device Manager' to check which USB COM is connected.
-  2. Open PuTTY, change the connection type to 'Serial', enter the USB COM in 'serial line' column and set the speed to 115200. Then, click 'Open'.
-  3. Finally, the output can be seen from PuTTY serial console. The results can be compared with test result from Edge Impulse.
+  <br> ![image](https://user-images.githubusercontent.com/105101813/178243771-ba974d19-c1f9-4756-9657-f15ea2f45cc0.png)
+  3. Open PuTTY, change the connection type to 'Serial', enter the USB COM in 'serial line' column and set the speed to 115200. Then, click 'Open'.
+  <br> ![image](https://user-images.githubusercontent.com/105101813/178243827-a54be592-dcd6-4f35-92d5-f72d44d8164b.png)
+  5. Finally, the output can be seen from PuTTY serial console. The results can be compared with test result from Edge Impulse.
   <br>![image](https://user-images.githubusercontent.com/105101813/178241660-9914d25f-66aa-471b-850e-889fe193f440.png)
 
+## Youtube Demo Video Link
+
+## Reference
 
 
 
